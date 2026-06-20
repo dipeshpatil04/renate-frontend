@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Renate AI — Autopilot your hiring speed, accuracy, and scale.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="container navbar-inner">
+    <a href="#" class="logo">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 13C3 7.477 7.477 3 13 3s10 4.477 10 10-4.477 10-10 10c-2.5 0-4.5-1-6-2.5L3 23l2.5-4C4 17.5 3 15.5 3 13z" fill="url(#logoGrad)"/>
+        <defs>
+          <linearGradient id="logoGrad" x1="3" y1="3" x2="23" y2="23" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#8B5CF6"/>
+            <stop offset="1" stop-color="#6D28D9"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <span>renate<span class="logo-ai">ai</span></span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#" class="nav-link">Products <svg class="chev" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="#" class="nav-link">Customers <svg class="chev" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="#" class="nav-link">Pricing <svg class="chev" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="#" class="nav-link">About <svg class="chev" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </nav>
+
+    <div class="navbar-actions">
+      <button class="btn btn-primary btn-sm">Get Free trial</button>
+      <button class="btn btn-outline btn-sm">Login / Signup</button>
+      <button class="lang-select">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2"/><path d="M1 7h12M7 1c1.7 1.8 1.7 10.2 0 12M7 1c-1.7 1.8-1.7 10.2 0 12" stroke="currentColor" stroke-width="1.2"/></svg>
+        EN
+        <svg class="chev" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#">Products</a>
+    <a href="#">Customers</a>
+    <a href="#">Pricing</a>
+    <a href="#">About</a>
+    <button class="btn btn-primary">Get Free trial</button>
+    <button class="btn btn-outline">Login / Signup</button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-blob" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <h1 class="hero-title">Autopilot your hiring<br>speed, accuracy, and scale.</h1>
+    <p class="hero-sub">Renate is an AI hiring infrastructure to grow your value, culture &amp; efficiency. Flexible hiring solutions for every business model with AI.</p>
+    <div class="hero-ctas">
+      <button class="btn btn-primary">Get Started
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="btn btn-outline">Start Free Trial</button>
+    </div>
+  </div>
+  <button class="ask-ai-pill">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1l1.2 3.8L12 6l-3.8 1.2L7 11l-1.2-3.8L2 6l3.8-1.2L7 1z" fill="#7C5CFC"/></svg>
+    Ask AI
+  </button>
+</section>
+
+<!-- ===== TRUSTED LOGOS ===== -->
+<section class="trusted">
+  <div class="container trusted-inner">
+    <p class="trusted-label">Trusted by 100+<br>organisations</p>
+    <div class="trusted-logos">
+      <span class="logo-item logo-tumblr">tumblr</span>
+      <span class="logo-item logo-stripe">stripe</span>
+      <span class="logo-item logo-schmitz">SCHMITZ <small>CARGOBULL</small></span>
+      <span class="logo-item logo-bullhorn">Bullhorn</span>
+      <span class="logo-item logo-ajio">AJIO</span>
+      <span class="logo-item logo-discord">Discord</span>
+      <span class="logo-item logo-pbm">PBM INFOTECH</span>
+      <span class="logo-item logo-reddys">Dr.Reddy's</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURE TABS SECTION ===== -->
+<section class="feature-section">
+  <div class="container">
+    <div class="eyebrow"><span>speed</span><i class="dot dot-yellow"></i></div>
+    <h2 class="section-title">Everything A Recruiter Needs.<br>In One Platform.</h2>
+    <p class="section-sub">From first course to a full-scale academy—create unlimited products, reach wider audience, and build multiple income streams.</p>
+
+    <div class="tabs" id="featureTabs">
+      <button class="tab active" data-tab="upload"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 11V3M8 3L5 6M8 3l3 3M3 11v1.5A1.5 1.5 0 004.5 14h7a1.5 1.5 0 001.5-1.5V11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Job Upload</button>
+      <button class="tab" data-tab="screening"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="3" width="12" height="9" rx="1.5" stroke="currentColor" stroke-width="1.4"/><path d="M5 14h6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>AI Screening</button>
+      <button class="tab" data-tab="ranking"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1l1.5 3.6L13 5l-2.8 2.5L11 11l-3-1.9L5 11l.8-3.5L3 5l3.5-.4L8 1z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Ranking</button>
+      <button class="tab" data-tab="insights"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 13l4-5 3 3 5-7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Insights</button>
+      <button class="tab" data-tab="pipeline"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="3" cy="4" r="1.6" stroke="currentColor" stroke-width="1.3"/><circle cx="3" cy="12" r="1.6" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="8" r="1.6" stroke="currentColor" stroke-width="1.3"/><path d="M4.5 4.7L10.7 7.4M4.5 11.3L10.7 8.6" stroke="currentColor" stroke-width="1.3"/></svg>Pipeline</button>
+      <button class="tab" data-tab="analytics"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13V7M8 13V3M13 13V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Analytics</button>
+    </div>
+
+    <div class="feature-panel">
+      <div class="mockup-card">
+        <div class="mockup-left">
+          <h4>Job Upload</h4>
+          <p class="mockup-desc">Upload a job description or share the details and let Renate AI understand your hiring needs.</p>
+
+          <div class="mockup-field">
+            <div class="mockup-field-icon">📄</div>
+            <div>
+              <strong>Paste Job Description</strong>
+              <span>Paste your job description and Renate AI will extract key details automatically.</span>
+            </div>
+            <span class="radio"></span>
+          </div>
+
+          <div class="mockup-field">
+            <div class="mockup-field-icon">⬆</div>
+            <div>
+              <strong>Upload JD File</strong>
+              <span>Upload your job description in PDF, DOCX or TXT format.</span>
+            </div>
+            <span class="radio"></span>
+          </div>
+
+          <label class="mockup-label">Job Title</label>
+          <div class="mockup-input">e.g. Senior Frontend Developer</div>
+
+          <div class="mockup-row">
+            <div>
+              <label class="mockup-label">Location</label>
+              <div class="mockup-input small">Bangalore, India ✕</div>
+            </div>
+            <div>
+              <label class="mockup-label">Experience Level</label>
+              <div class="mockup-input small">3 – 5 Years ▾</div>
+            </div>
+          </div>
+
+          <label class="mockup-label">Employment Type</label>
+          <div class="pill-group">
+            <span class="pill active">Full-time</span>
+            <span class="pill">Part-time</span>
+            <span class="pill">Contract</span>
+            <span class="pill">Internship</span>
+          </div>
+
+          <div class="mockup-actions">
+            <button class="btn btn-primary btn-sm">Continue</button>
+            <button class="btn-link">Save as Draft</button>
+          </div>
+        </div>
+
+        <div class="mockup-right">
+          <div class="mockup-extracted">
+            <strong>✦ Extracted by Renate AI</strong>
+            <span>We've identified the key details from your job description.</span>
+          </div>
+
+          <div class="extract-block">
+            <p class="extract-title">📋 Role Summary</p>
+            <p class="extract-body">We are looking for a Senior Frontend Developer with strong experience in building scalable web applications using modern JavaScript frameworks. You will collaborate with cross-functional teams to deliver exceptional user experiences.</p>
+          </div>
+
+          <div class="extract-block">
+            <p class="extract-title">🛠 Key Skills</p>
+            <div class="skill-tags">
+              <span>React.js</span><span>TypeScript</span><span>Next.js</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Tailwind CSS</span><span>REST APIs</span><span>+6 more</span>
+            </div>
+          </div>
+
+          <div class="extract-block">
+            <p class="extract-title">📈 Experience</p>
+            <p class="extract-body">3 – 5 Years</p>
+          </div>
+
+          <div class="extract-block">
+            <p class="extract-title">🎓 Education</p>
+            <p class="extract-body">Bachelor's degree in Computer Science or related field</p>
+          </div>
+
+          <div class="extract-block">
+            <p class="extract-title">✅ Responsibilities</p>
+            <ul class="extract-list">
+              <li>Build reusable components and front-end libraries</li>
+              <li>Optimize applications for maximum speed and scalability</li>
+              <li>Collaborate with designers and backend developers</li>
+            </ul>
+          </div>
+
+          <p class="extract-confirm">✓ Looks good! You can edit any section before continuing.</p>
+        </div>
+      </div>
+
+      <div class="feature-aside">
+        <div class="ai-promo-card">
+          <div class="ai-promo-icon">✦</div>
+          <h4>AI-Powered Hiring</h4>
+          <p>Save time. Hire better.<br>Let AI find the right candidates for you.</p>
+          <button class="btn-link-white">See How It Works <span>→</span></button>
+        </div>
+
+        <h3 class="aside-title">Start with a job. We'll handle the rest.</h3>
+        <ul class="aside-list">
+          <li>Extracts skills, experience, and role expectations automatically</li>
+          <li>Structures your job for better candidate matching</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DARK STATS SECTION ===== -->
+<section class="stats-section">
+  <div class="container">
+    <div class="eyebrow eyebrow-dark"><i class="dot dot-red"></i><span>Accuracy</span></div>
+    <h2 class="section-title light center">Emerging institutions and fintech<br>are recruiting with renate.</h2>
+    <p class="section-sub light center">Renate is an AI hiring infrastructure to grow your value, culture &amp; efficiency.<br>Flexible hiring solutions for every business model with AI.</p>
+
+    <div class="hero-ctas center">
+      <button class="btn btn-outline-light">Start Free Trial</button>
+      <button class="btn btn-primary">Book a demo</button>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat"><strong>92%</strong><span>AI Match Accuracy</span></div>
+      <div class="stat"><strong>1000+</strong><span>Candidates Screened Daily</span></div>
+      <div class="stat"><strong>24 Hours</strong><span>To Deliver Top 5 Candidates</span></div>
+      <div class="stat"><strong>80% Faster</strong><span>Hiring Process</span></div>
+    </div>
+
+    <div class="cards-row">
+      <div class="feature-card">
+        <div class="card-visual visual-analytics">
+          <div class="visual-row"><span>🏷 Free</span><span>✓</span></div>
+          <div class="visual-bar"></div>
+          <div class="visual-row"><span>📷 One-time payment</span></div>
+          <div class="visual-bar short"></div>
+          <div class="visual-row"><span>🔄 Subscription</span></div>
+          <div class="visual-bar"></div>
+          <div class="visual-row"><span>☰ Part payments</span></div>
+          <div class="visual-bar short"></div>
+        </div>
+        <h4>Data-Driven Hiring Analytics</h4>
+        <p>Measure performance, identify bottlenecks, and improve outcomes. Turn hiring into a predictable, optimized process.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="card-visual visual-ranking">
+          <div class="visual-header"><span class="live-dot"></span>Screening Live <small>Real-time updates</small></div>
+          <div class="visual-grid">
+            <div><strong>10K+</strong><span>Profiles Screened</span></div>
+            <div><strong>24h</strong><span>Time to Shortlist</span></div>
+            <div><strong>92%</strong><span>Match Accuracy</span></div>
+            <div><strong>Top 5</strong><span>Candidates Delivered</span></div>
+            <div><strong>1M+</strong><span>Data Points Analyzed</span></div>
+            <div><strong>0</strong><span>Manual Screening</span></div>
+          </div>
+        </div>
+        <h4>Smart Ranking System</h4>
+        <p>Every candidate is scored based on real job fit and potential. Focus only on the best matches, instantly.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="card-visual visual-learn">
+          <svg viewBox="0 0 200 160" width="100%" height="100%">
+            <circle cx="100" cy="80" r="55" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5" stroke-dasharray="4 4"/>
+            <circle cx="100" cy="80" r="26" fill="rgba(255,255,255,0.18)"/>
+            <text x="100" y="85" text-anchor="middle" fill="white" font-size="13" font-weight="700">AI</text>
+            <circle cx="100" cy="25" r="14" fill="rgba(255,255,255,0.9)"/>
+            <circle cx="155" cy="80" r="14" fill="rgba(255,255,255,0.9)"/>
+            <circle cx="100" cy="135" r="14" fill="rgba(255,255,255,0.9)"/>
+            <circle cx="45" cy="80" r="14" fill="rgba(255,255,255,0.9)"/>
+          </svg>
+        </div>
+        <h4>AI That Learns With You</h4>
+        <p>Continuously improves based on your hiring decisions. Gets smarter with every role you fill.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SCALE SECTION ===== -->
+<section class="scale-section">
+  <div class="container">
+    <div class="eyebrow"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#5B3DF5" stroke-width="1.4"/><circle cx="8" cy="8" r="2" fill="#5B3DF5"/></svg><span>Scale</span></div>
+    <h2 class="section-title">Grow your Team that<br>Builds, Sells &amp; Scales</h2>
+    <p class="section-sub">Other platforms give you tools. Renate gives you intelligence. Every part of your business learns, improves, and works harder over time—so you can succeed faster with less effort.</p>
+
+    <div class="hero-ctas">
+      <button class="btn btn-primary">Get Started
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="btn btn-outline">Start Free Trial</button>
+    </div>
+
+    <div class="results-list">
+      <div class="result-row">
+        <span class="result-logo">SCHMITZ <small>CARGOBULL</small></span>
+        <div class="result-stat"><strong>Top 0.1%</strong><span>Candidates Identified by AI</span></div>
+        <div class="result-stat"><strong>0 Manual Screening</strong><span>Fully Automated Workflow</span></div>
+      </div>
+      <div class="result-row">
+        <span class="result-logo logo-bullhorn">Bullhorn</span>
+        <div class="result-stat"><strong>3x Faster</strong><span>Shortlisting vs Traditional Hiring</span></div>
+      </div>
+      <div class="result-row">
+        <span class="result-logo logo-reddys">Dr.Reddy's</span>
+        <div class="result-stat"><strong>80%</strong><span>Reduction in Hiring Time</span></div>
+        <div class="result-stat"><strong>5x Faster</strong><span>Hiring Cycles</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BANNER ===== -->
+<section class="cta-banner">
+  <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1600&auto=format&fit=crop" alt="Team in a meeting" class="cta-img">
+  <div class="cta-overlay">
+    <button class="btn btn-primary btn-sm">Book a demo</button>
+    <h2 class="cta-title">Grow your Team that<br>Builds, Sells &amp; Scales</h2>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <h2 class="footer-title">Experience <span>comfort.</span></h2>
+
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <svg width="22" height="22" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 13C3 7.477 7.477 3 13 3s10 4.477 10 10-4.477 10-10 10c-2.5 0-4.5-1-6-2.5L3 23l2.5-4C4 17.5 3 15.5 3 13z" fill="url(#logoGrad2)"/>
+            <defs><linearGradient id="logoGrad2" x1="3" y1="3" x2="23" y2="23" gradientUnits="userSpaceOnUse"><stop stop-color="#8B5CF6"/><stop offset="1" stop-color="#6D28D9"/></linearGradient></defs>
+          </svg>
+          <span>renate<span class="logo-ai">ai</span></span>
+        </a>
+        <p>© 2026 renate.ai Inc.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="X">𝕏</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="YouTube">▶</a>
+          <a href="#" aria-label="Discord">◎</a>
+          <a href="#" aria-label="Mail">✉</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <a href="#">Download</a>
+        <a href="#">Product</a>
+        <a href="#">Docs</a>
+        <a href="#">Changelog</a>
+        <a href="#">Press</a>
+      </div>
+      <div class="footer-col">
+        <a href="#">Releases</a>
+        <a href="#">Blog</a>
+        <a href="#">Pricing</a>
+        <a href="#">Use Cases</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
