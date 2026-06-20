@@ -79,6 +79,10 @@ img { display: block; max-width: 100%; }
 .navbar {
   border-bottom: 1px solid var(--border);
   padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
 }
 .nav-inner {
   max-width: var(--max);
